@@ -50,12 +50,21 @@
 
 ---
 
+## Usage Analytics & Tracking
+
+User interactions (e.g. searches, collection edits, profile updates) are event-driven and can be extended to track usage metrics. These logs simulate behavioral data that can be used for KPIs, retention analysis, or ML-based personalization.
+
+---
+
 ## Tech Stack
 
 | Frontend     | Backend         | APIs / Integrations         | DevOps / Hosting     |
 |--------------|------------------|------------------------------|------------------------|
 | Angular 13   | Firebase Firestore | Google Maps, NYTimes Books   | Firebase Hosting        |
 | TypeScript   | Firebase Auth     | NgRx, RxJS, Chart.js         | GitHub + CLI Deploy     |
+
+> ⚙The combination of NgRx and Firebase Firestore simulates a reactive event pipeline — user actions trigger state changes and DB syncs, modeling ingestion + transformation + storage flow.
+
 
 ---
 
@@ -67,6 +76,14 @@
 <br/>
 
 I created BookCompany to explore building a scalable, full-stack Angular application with real-world API integrations, authentication flows, and dynamic state management — all deployed serverlessly with Firebase. I wanted to simulate a professional-grade project architecture from end to end.
+
+
+
+---
+
+## Future Work (Version 1.2): ML Integration
+
+Collected user behavior and media activity can be extended into ML pipelines for recommendations, engagement scoring, or media classification. This structure supports supervised and unsupervised modeling workflows via exportable Firestore logs.
 
 
 ---
@@ -309,7 +326,12 @@ it('should navigate to the login page and show login form', async () => {
 
 ---
 
-## Acknowledgments
+## CI/CD Potential
+
+This project can be integrated with GitHub Actions to automate testing, building, and deployment to Firebase Hosting. Workflow files (`.yml`) and configuration templates can be added to support continuous delivery and cloud deployment pipelines.
+
+---
+
 
 - [NYT Books API](https://developer.nytimes.com/)
 - [Google Maps Platform](https://console.cloud.google.com/google/maps-apis/start)
