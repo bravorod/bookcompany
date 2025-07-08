@@ -19,7 +19,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "set-env": "node set-env.js",
+    "build": "npm run set-env && ng build --configuration production",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -73,7 +74,7 @@
     "font-awesome": "~4.7.x",
     "gsap": "^3.9.1",
     "hammerjs": "~2.0.8",
-    "igniteui-angular": "^13.0.13",
+    "igniteui-angular": "^13.2.24",
     "jquery": "^3.6.0",
     "jszip": "^3.7.1",
     "md5": "^2.2.1",
@@ -109,6 +110,8 @@
     "@types/jquery": "^3.5.14",
     "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
+    "cross-env": "^7.0.3",
+    "dotenv": "^17.1.0",
     "firebase-tools": "^6.10.0",
     "force": "^0.0.3",
     "fuzzy": "^0.1.3",

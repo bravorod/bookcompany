@@ -1,15 +1,11 @@
-
 @import "~bootstrap/dist/css/bootstrap.css";
-@import "../node_modules/angular-calendar/css/angular-calendar.css";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
-
 
 html,
 body {
   height: 100%;
-  position: relative;
   margin: 0;
-  box-sizing: border-box;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 .full-page-container {
@@ -18,9 +14,7 @@ body {
 
 app-root {
   min-height: 100%;
-  // overflow: hidden;
   display: block;
-  position: relative;
   background-color: #eee;
 }
 
@@ -38,18 +32,3 @@ app-root {
 app-welcome {
   background-color: white;
 }
-
-@import "~igniteui-angular/theming";
-// Uncomment the following lines if you want to add a custom palette:
- $primary: #731963 !default;
- $secondary: #242424 !default;
- $app-palette: igx-palette($primary, $secondary);
-
-/* autoprefixer grid: on */
-
-@include igx-core();
-@include igx-typography($font-family: $material-typeface, $type-scale: $material-type-scale);
-@include igx-theme($default-palette);
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
